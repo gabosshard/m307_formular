@@ -1,0 +1,101 @@
+body{
+    color: black;
+    background-image: url("1x/Zeichenfläche\ 2.png");
+
+}
+
+:root {
+    font-family: sans-serif;
+    font-size: clamp(16px,2vw,48px);
+}
+
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1.5em;
+}
+main {
+    position: relative;
+    height: 100vh;
+}
+form {
+    position: absolute;
+    width: 80vw;
+    top: 40%;
+    left: calc(50% - 15vw);
+    margin: -25vh 0 0 -25vw;
+    padding: 2em;
+
+}
+
+@media (width < 600px) {
+    form {
+        width: 100vw;
+        left: 0;
+        top: 4em;
+        margin: 0;
+    }
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 6em 2em auto;
+    grid-template-rows: auto;
+    gap: 0.5em;
+}
+
+input, output, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    grid-column: 2/4;
+    margin: 0;
+}
+
+
+
+
+
+input::placeholder {
+    color: #6d9627d3;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    grid-column: 2/3;
+}
+
+input[type="range"] {
+    grid-column: 3/4;
+}
+
+#h{
+    grid-column: 2/3;
+}
+
+.message{
+   text-align: center; 
+   grid-column: 1/4;
+   padding-bottom: 5.5%;
+}
+
+
+ 
